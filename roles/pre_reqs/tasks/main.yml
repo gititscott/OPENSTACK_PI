@@ -1,0 +1,19 @@
+---
+- name: Extend SD Card Usage
+  include: extend_sdcard.yml
+  
+- name: Set hostname
+  include: set_hostname.yml
+  
+#- name: Disable SE Linux
+#  include: disable_selinux.yml
+
+- name: Disable firewalld daemon
+  include: disable_firewalld.yml
+
+- name: Set en_US.utf-8 encoding
+  include: set_encoding.yml
+
+- name: Update YUM
+  include: update_yum.yml
+

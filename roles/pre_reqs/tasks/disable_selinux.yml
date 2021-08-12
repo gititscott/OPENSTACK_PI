@@ -1,0 +1,9 @@
+---
+- name: Disable SELinux
+  replace:
+      path: /etc/selinux/config
+      regexp: '(SELINUX=)enforcing'
+      replace: '\1disabled'
+  
+
+

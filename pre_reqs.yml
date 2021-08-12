@@ -1,0 +1,7 @@
+---
+- hosts: openstack
+  become: true
+  become_user: "root"
+  gather_facts: false
+  roles:
+    - pre_reqs

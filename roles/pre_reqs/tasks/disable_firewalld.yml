@@ -1,0 +1,5 @@
+---
+- name: Disable service firewalld
+  ansible.builtin.service:
+    name: firewalld
+    enabled: no

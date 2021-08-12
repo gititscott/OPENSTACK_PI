@@ -1,0 +1,12 @@
+---
+- name: Add Lang Setting 
+  lineinfile:
+    state: present
+    path:  "/etc/environment"
+    line: "LANG=en_US.utf-8"
+
+- name: Add LC Setting 
+  lineinfile:
+    state: present
+    path:  "/etc/environment"
+    line: "LC_ALL=en_US.utf-8"

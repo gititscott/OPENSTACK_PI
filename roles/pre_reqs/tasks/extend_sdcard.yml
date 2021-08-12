@@ -1,0 +1,12 @@
+---
+- name: Extend SD Card to Full Space
+  ansible.builtin.copy:
+    src: extend_sdcard.sh
+    dest: /root/extend_sdcard.sh
+    owner: root
+    group: root
+    mode: u+rwx,g-wx,o-rwx
+
+- name: Execute Script to Extend the SD Card
+  ansible.builtin.shell: /root/extend_sdcard.sh
+  ignore_errors: yes
