@@ -1,0 +1,2 @@
+[openstack]
+openstack_pi    ansible_connection=ssh        ansible_user=root
