@@ -5,8 +5,8 @@
 - name: Set hostname
   include: set_hostname.yml
   
-#- name: Disable SE Linux
-#  include: disable_selinux.yml
+- name: Disable SE Linux
+  include: disable_selinux.yml
 
 - name: Disable firewalld daemon
   include: disable_firewalld.yml
